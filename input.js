@@ -1,5 +1,5 @@
 let connection;
-const { MSG } = require('./constants');
+const { MSG, WORKKEYS } = require('./constants');
 
 //function for handling user input
 const handleUserInput = function(key) {
@@ -7,7 +7,10 @@ const handleUserInput = function(key) {
         process.exit();
     }
     if (MSG[key]) {
-        connection.write(`Say: ${MSG[key]}`);   
+        connection.write(MSG[key]);   
+    }
+    if (WORKKEYS[key]) {
+        connection.write(WORKKEYS[key]);   
     }
 }
 

@@ -2,8 +2,11 @@ const IP = '135.23.222.131';
 const PORT = 50542;
 
 const MSG = {
-    m: 'OK!',
-    n: 'NOO!',
+    m: "Say: OK!",
+    n: "Say: NOO!",
+}
+
+const WORKKEYS = {
     w: "Move: up",
     a: "Move: left",
     s: "Move: down",
@@ -13,5 +16,6 @@ const MSG = {
 module.exports = {
     IP,
     PORT,
-    MSG
+    MSG,
+    WORKKEYS
   };
