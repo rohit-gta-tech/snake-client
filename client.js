@@ -26,9 +26,6 @@ const connect = function() {
         }, i*1000+500)
       }*/
   })
-
-
-
   conn.on('data', (data) => {
       console.log(data);
   })
